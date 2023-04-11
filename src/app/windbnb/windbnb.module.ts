@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { MainStaysComponent } from './components/main-stays/main-stays.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { MainStaysComponent } from './components/main-stays/main-stays.component
   ],
   imports: [
     CommonModule,
+    PrimeNgModule
   ],
   exports: [
     HeaderComponent,

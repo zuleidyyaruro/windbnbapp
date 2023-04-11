@@ -1,1 +1,18 @@
-<p>main-stays works!</p>
+<div class="grid ">
+  <div class="col-4 h-22rem mb-3" *ngFor="let item of staysByCity">
+    <img src="{{item.photo}}" alt="{{item.city}}" class="w-full h-16rem  border-round-2xl">
+    <div class="flex  justify-content-between mt-3">
+      <div>
+        <span [class.super-host]="item.superHost">{{item.superHost ? 'SUPER HOST' : null }}</span>
+        <span class="type">
+          {{item.type ==='Entire apartment' ? 'Entire apartment: ' + item.beds + ' beds' : item.type}}
+        </span>
+      </div>
+      <div class="flex align-items-center">
+        <span class="material-icons icon">star</span>
+        <span>{{item.rating}}</span>
+      </div>
+    </div>
+    <p class="mt-2 title">{{item.title}}</p>
+  </div>
+</div>

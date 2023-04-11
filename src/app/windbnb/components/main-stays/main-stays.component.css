@@ -1,0 +1,17 @@
+.super-host {
+  border: 1px solid #4F4F4F;
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.title {
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.icon {
+  color: #EB5757;
+}

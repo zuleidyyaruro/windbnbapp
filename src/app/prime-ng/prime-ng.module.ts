@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [],
@@ -11,7 +12,8 @@ import { ButtonModule } from 'primeng/button';
   ],
   exports: [
     SidebarModule,
-    ButtonModule
+    ButtonModule,
+    CardModule
   ]
 })
 export class PrimeNgModule { }
