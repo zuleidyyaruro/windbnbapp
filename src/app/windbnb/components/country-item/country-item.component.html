@@ -1,0 +1,5 @@
+<li *ngFor="let item of countries" class="flex align-items-center text-sm mb-3 cursor-pointer"
+  (click)="selectCity(item)">
+  <span class=" material-icons">location_on</span>
+  <span>{{item}}, Finland</span>
+</li>

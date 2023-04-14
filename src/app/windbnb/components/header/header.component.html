@@ -1,9 +1,12 @@
-<div class="flex">
-  <img src="../../assets/images/logo.svg" alt="logo">
-</div>
-
-<div class="flex align-items-center">
-  <span class="city border">Helsinki, Finland</span>
-  <p (click)="openDrawer()" class="flex align-items-center border guest">Add guest </p>
-  <span class="material-icons icon-search icon border flex align-items-center">search</span>
-</div>
+<header class="w-12  m-auto grid flex align-items-center">
+  <div class="col-12 md:col-6 lg:col-6">
+    <img src="../../assets/images/logo.svg" alt="logo">
+  </div>
+  <div class="col-12 md:col-6 lg:col-6 flex justify-content-center md:justify-content-end">
+    <span class="city border-1 border-200">Helsinki, Finland</span>
+    <p (click)="openDrawer()" class="flex align-items-center border-1 border-200 guest">Add guest </p>
+    <div class="border-1 border-200 icon flex icon-search flex align-items-center">
+      <span class=" material-icons ">search</span>
+    </div>
+  </div>
+</header>

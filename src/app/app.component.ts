@@ -10,17 +10,23 @@ import { Stays } from './windbnb/interfaces/stays.interface';
 })
 export class AppComponent implements OnInit {
 
-  drawer!: boolean;
+  drawer: boolean = false;
   country: string = 'Helsinki'
-  staysByCity: Stays[] = Array.from(stays);
+  staysByCity: Stays[] = []
+  allStays: Stays[] = Array.from(stays);
 
   ngOnInit(): void {
-    this.staysByCity = this.staysByCity.filter(item => item.city === this.country);
+    this.staysByCity = this.allStays.filter(item => item.city === this.country);
     console.log(this.staysByCity)
   }
 
   openOrCloseDrawer(event: boolean) {
     this.drawer = event;
+  }
+
+  data(event: Stays) {
+    this.drawer = false;
+    this.staysByCity = this.allStays.filter(item => item.beds === event.beds || item.city === event.city);
   }
 
 

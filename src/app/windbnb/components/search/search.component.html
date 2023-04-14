@@ -1,0 +1,33 @@
+<div class=" w-10 m-auto grid">
+  <div [ngClass]="locationOrGuest==='location' ? 'border-900':'border-200'"
+    class="col-4 border-1 border-200 flex flex-column px-3 cursor-pointer" (click)="setLocationOrGuest('location')">
+    <span class="font-semibold text-xs mb-2">LOCATION</span>
+    <span>{{city}}, Finland</span>
+  </div>
+  <div class="col-4 border-1 border-200 flex flex-column px-3 cursor-pointer" (click)="setLocationOrGuest('guest')"
+    [ngClass]="locationOrGuest==='guest' ? 'border-900':'border-200'">
+    <span class="font-semibold text-xs mb-2">GUEST</span>
+
+    <span *ngIf="numberPeople>0; else noPeople">{{numberPeople}} guests</span>
+    <ng-template #noPeople>
+      <span>Add guests</span>
+    </ng-template>
+
+  </div>
+  <div class="col-4 border-1 border-200 text-center ">
+    <p-button icon="pi pi-search" class="cursor-pointer" label="Search" styleClass="p-button-raised p-button-danger"
+      (click)="searchStays()"></p-button>
+  </div>
+</div>
+
+<div class="w-10 m-auto grid mt-3">
+
+  <ul class="list-none col-4 " *ngIf="locationOrGuest==='location'">
+    <app-country-item [countries]="countries" (onCity)="selectCity($event)"></app-country-item>
+  </ul>
+
+  <div class="col-offset-4 text-sm" *ngIf="locationOrGuest==='guest'">
+    <app-buttons-guests (onTotalPeople)="totalPeople($event)"></app-buttons-guests>
+  </div>
+
+</div>
