@@ -36,11 +36,11 @@
 ## Overview
 
 ![screenshot](https://github.com/zuleidyyaruro/windbnbapp/blob/main/screencapture-teal-gaufre-81559a-netlify-app-2023-04-14-08_56_19.png)
-
+---
 ![screenshot](https://github.com/zuleidyyaruro/windbnbapp/blob/main/screencapture-teal-gaufre-81559a-netlify-app-2023-04-14-08_56_30.png)
-
+---
 ![screenshot](https://github.com/zuleidyyaruro/windbnbapp/blob/main/screencapture-teal-gaufre-81559a-netlify-app-2023-04-14-08_56_39.png)
-
+---
 ![screenshot](https://github.com/zuleidyyaruro/windbnbapp/blob/main/screencapture-teal-gaufre-81559a-netlify-app-2023-04-14-08_56_50.png)
 
 ### Built With
